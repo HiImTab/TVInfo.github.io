@@ -60,10 +60,10 @@ form.addEventListener('submit', async function(e){
 } */
 
 const displayShowInfo = (shows) => {
-    let topFive = 0;
+    //let topFive = 0;
     for(let s of shows){
         //only shows top 5 results
-        if(topFive <= 5){ 
+        //if(topFive <= 5){ 
 
             //container to hold all show info
             const showContainer = document.createElement('div');
@@ -159,9 +159,9 @@ const displayShowInfo = (shows) => {
             showContainer.append(showInfo);
 
             document.body.append(showContainer);  
-        }
+       //}
         //increase count of shows
-        topFive++;
+       // topFive++;
     }
 }
 
