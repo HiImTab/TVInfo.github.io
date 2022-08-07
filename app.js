@@ -102,7 +102,7 @@ const displayShowInfo = (shows) => {
             const cast = document.createElement('button');
             cast.id = 'cast';
             cast.classList = 'btn btn-success mt-3 mx-1 px-3';
-            cast.innerText = 'Cast Info';
+            cast.innerText = 'Cast';
 
             const eps = document.createElement('button');
             eps.id = 'eps';
