@@ -5,10 +5,10 @@ body{
     color: #fff;
 }
 
-#showContainer{
+#showContainer,
+#seasonContainer{
     background-color: rgba(0,0,0,.1);
     width: 100%;
-    height: 10%;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -16,17 +16,47 @@ body{
     border: 1px solid #fff;
 }
 
-#showContainer:not(:first-of-type){
+#nameContainer{
+    padding: 1em;
+}
+
+#castContainer{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 5em 3em;
+}
+
+#castImg{
+    background-color: rgba(0,0,0,.1);
+    margin: 1em 0 3em;
+    text-align: center;
+    padding-top: 1em;
+    width: 25%;
+    border: 1px solid #fff;
+}
+
+#castTitle{
+    padding-left: .5em;
+}
+
+#showContainer:not(:first-of-type),
+#seasonContainer:not(:first-of-type){
     border-bottom-style: none;
 }
 
-#showContainer:last-of-type{
+#showContainer:last-of-type,
+#seasonContainer:last-of-type{
     border-bottom-style: solid;
 }
 
 #showSummary{
     padding: 1em;
     flex: 4 0 0;
+}
+
+#seasonSummary{
+    padding: 1em;
 }
 
 #showInfo{
@@ -42,14 +72,60 @@ body{
     text-align: center;
 }
 
-@media(max-width: 900px){
+#as{
+    font-weight: 300;
+}
 
-    #showContainer{
+#tableContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#epSeason{
+    width: 90%;
+} 
+
+#table{
+    width: 90%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+@media(max-width: 1200px){
+
+    #castContainer{
         flex-direction: column;
+        align-items: none;
     }
-
-    #showSummary{
+    #castImg{
+        width: 100%;
+        margin: 0;
+    }
+    #castImg:not(:first-of-type){
+        border-top-style: none;
+    }
+    #castImg:last-of-type{
+        border-bottom-style: solid;
+    }
+    #castTitle{
         text-align: center;
     }
 }
 
+@media(max-width: 900px){
+
+    #showContainer,
+    #seasonContainer{
+        flex-direction: column;
+    }
+    #showSummary,
+    #nameContainer,
+    #seasonSummary{
+        text-align: center;
+    }
+    #epSeason{
+        width: 100%;
+        text-align: center;
+    } 
+}
