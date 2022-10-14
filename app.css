@@ -97,6 +97,9 @@ body{
     #castContainer{
         flex-direction: column;
         align-items: none;
+        width: 100%;
+        width: 100%;
+        padding: 3em;
     }
     #castImg{
         width: 100%;
@@ -128,4 +131,13 @@ body{
         width: 100%;
         text-align: center;
     } 
+}
+
+@media(max-width: 390px){
+    #img{
+        width: 90%;
+    }
+    #charName, #actorName{
+        font-size: 1.5em;
+    }
 }
