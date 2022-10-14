@@ -98,7 +98,8 @@ body{
         flex-direction: column;
         align-items: none;
         width: 100%;
-        padding: 3em;
+        padding: 2em;
+        padding-top: 1em;
     }
     #castImg{
         width: 100%;
