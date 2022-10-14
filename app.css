@@ -142,9 +142,9 @@ body{
         align-items: none;
         width: 100%;
     }
-    #img{
+    /*#img{
         width: 75%;
-    }
+    }*/
     #charName, #actorName{
         font-size: 1.5em;
     }
